@@ -1,12 +1,33 @@
 from inti_param import InitParam
 from optimization import  Optimization
-from titanic_data import  TitanicData
+import numpy as np
+from image_prediction import image_predict
+import matplotlib.pyplot as plt
+
+
+learning_rate = 0.005
+
 from cat_noncat import CatNonCat
-
-
-X, Y = CatNonCat.load_data()
+X, Y, classes, num_px = CatNonCat.load_data()
 w,b = InitParam.initialize_params(X.shape[0])
-Optimization.optimize(w, b, X, Y, 2000, 0.005, True)
+params, grads, cost= Optimization.optimize(w, b, X, Y, 2000, learning_rate, False)
+image_predict(params, classes, num_px)
+costs = np.squeeze(cost)
+plt.plot(costs)
+plt.ylabel('cost')
+plt.xlabel('iterations (per hundreds)')
+plt.title("Learning rate =" + str(learning_rate))
+
+# y_predict = predict(params['w'], params['b'], X)
+# print("train accuracy: {} %".format(100 - np.mean(np.abs(y_predict - Y)) * 100))
+
+
+
+
+
+
+
+
 
 
 

@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-import os
+
 class TitanicData:
     @staticmethod
     def load_data():

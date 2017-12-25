@@ -16,4 +16,4 @@ class CatNonCat():
 		test_set_x_flatten = test_set_x_orig.reshape(test_set_x_orig.shape[0], -1).T
 		X = train_set_x_flatten/255.
 		X_test = test_set_x_flatten/255.
-		return X, Y_train
+		return X, Y_train, classes, num_px
