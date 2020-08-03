@@ -1,2 +1,6 @@
 # Projects
-This repo contain machine learning code in octave. These code are assignments from machine learning course offered at coursera from stanford university.
+This repo containse code from
+  - Machine learning related courses from coursera
+  - projects from various books
+  - example/learning projects
+  
