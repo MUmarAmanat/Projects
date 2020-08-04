@@ -1,10 +1,8 @@
-/anamoly detection
-/character recognition
-/k-mean and pca
-/Kaggle Housing Competition
-/catvsdog
-/logistic regression with python
-/Machine Learning Project Pipeleing.docx
-/logistic regression
-/README.md
-/.gitignore
+anamoly detection/
+catvsdog/
+character recognition/
+k-mean and pca/
+Kaggle Housing Competition/
+logistic regression with python/
+Machine Learning Project Pipeleing.docx
+logistic regression/
